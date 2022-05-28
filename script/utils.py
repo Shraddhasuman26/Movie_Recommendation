@@ -4,12 +4,12 @@ import constants as const
 
 
 def movie_link(movie_id):
-    """generate movie link based on id"""
+    #generate movie link based on id
     return f"https://www.themoviedb.org/movie/{movie_id}"
 
 
 def fetch_poster(movie_id):
-    """generate poster link based on id"""
+    #generate poster link based on id
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US"
     data = requests.get(url)
     data = data.json()
